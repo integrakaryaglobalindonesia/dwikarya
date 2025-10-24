@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dwikarya Konstruksi - PT. Integra Karya Global Indonesia</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="konstruksi, kontraktor, renovasi, interior, makassar, dwikarya" name="keywords" />
+    <meta content="Dwikarya Konstruksi adalah mitra konstruksi terpercaya Anda di Makassar. Kami melayani konstruksi bangunan baru, renovasi, desain interior, dan perizinan." name="description" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/indexKonstruksi.css')}}" />
+</head>
+
+<body>
+    <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-white"></div>
+    </div>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" id="navbar">
+        <div class="container-fluid px-4 px-lg-5">
+            <a href="#home" class="navbar-brand d-flex align-items-center">
+                <img src="{{url_for('static', filename='img/dwikarya.png')}}" alt="Logo Dwikarya Konstruksi" />
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto align-items-lg-center">
+                    <a href="#home" class="nav-item nav-link active">Beranda</a>
+                    <a href="#about" class="nav-item nav-link">Tentang</a>
+                    <a href="#services" class="nav-item nav-link">Layanan</a>
+                    <a href="#keunggulan" class="nav-item nav-link">Keunggulan</a>
+                    <a href="#proses" class="nav-item nav-link">Proses Kerja</a>
+                    <a href="#projects" class="nav-item nav-link">Portofolio</a>
+                    <a href="#footer" class="nav-item nav-link">Kontak</a>
+
+                    <div class="ms-lg-3 d-none d-lg-block">
+                        <button type="button" class="theme-toggle-button" id="theme-toggle-desktop" aria-label="Toggle theme">
+                <i class="theme-switch-icon fa-solid fa-sun"></i>
+                <i class="theme-switch-icon fa-solid fa-moon"></i>
+              </button>
+                    </div>
+                    <div class="nav-item theme-toggle-mobile d-lg-none">
+                        <button type="button" class="theme-toggle-button" id="theme-toggle-mobile" aria-label="Toggle theme">
+                <i class="theme-switch-icon fa-solid fa-sun"></i>
+                <i class="theme-switch-icon fa-solid fa-moon"></i>
+              </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    {% block content %}{% endblock content %}
+
+    <footer class="footer wow fadeIn" data-wow-delay="0.1s" id="footer">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6 text-center text-md-start">
+                    <h4 class="footer-title">PT. Integra Karya Global Indonesia</h4>
+                    <p class="mb-4">
+                        Dwikarya Konstruksi adalah bidang usaha kami yang siap menjadi mitra terpercaya untuk segala kebutuhan konstruksi Anda.
+                    </p>
+                    <p class="fw-bold mb-2">NIB : 2309250100706</p>
+                    <p class="fw-bold">NPWP : 1000 0000 0568 5974</p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 text-center text-md-start">
+                    <h4 class="footer-title">Sosial Media</h4>
+                    <div class="social-links">
+                        <a class="btn-social" href="https://www.instagram.com/dwikaryakonstruksi_/" aria-label="Instagram"><i class="fab fa-instagram"></i
+              ></a>
+                        <a class="btn-social" href="https://wa.me/6285240349899" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i
+              ></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-12 text-center text-md-start">
+                    <h4 class="footer-title">Alamat</h4>
+                    <div class="contact-item">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <p>
+                            Jl. Langgau 8 No. 38 Kel. Timungan Lompoa, Kec. Bontoala, Kota Makassar 90151
+                        </p>
+                    </div>
+
+                    <h4 class="footer-title mt-5">Hubungi Kami</h4>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <p>WA : 085240349899</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        &copy; Dwikarya Konstruksi, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="modalKonstruksi" tabindex="-1" aria-labelledby="modalKonstruksiLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalKonstruksiLabel">
+                        🏗️ Konstruksi Bangunan
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Melayani pembangunan dari tahap awal hingga selesai, mencakup:
+                    <ul>
+                        <li>Perencanaan struktur dan desain awal</li>
+                        <li>Pekerjaan pondasi, struktur, dinding, atap, dan finishing</li>
+                        <li>
+                            Pemilihan dan penggunaan material sesuai spesifikasi teknis
+                        </li>
+                        <li>Tenaga kerja profesional dan terampil</li>
+                        <li>Pengawasan rutin dan kontrol mutu selama proyek berjalan</li>
+                        <li>
+                            Penyelesaian proyek sesuai waktu dan anggaran yang disepakati
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalRenovasi" tabindex="-1" aria-labelledby="modalRenovasiLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalRenovasiLabel">
+                        🔧 Renovasi Bangunan
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Layanan renovasi menyeluruh maupun sebagian, meliputi:
+                    <ul>
+                        <li>
+                            <b>Renovasi ringan:</b> perbaikan atap, dinding, lantai, dan cat
+                        </li>
+                        <li>
+                            <b>Renovasi sedang:</b> ubah fungsi ruang, penambahan ruang, ganti material
+                        </li>
+                        <li>
+                            <b>Renovasi besar:</b> bongkar sebagian bangunan dan restrukturisasi ulang
+                        </li>
+                        <li>Evaluasi struktur bangunan lama sebelum renovasi</li>
+                        <li>Desain ulang berdasarkan kebutuhan dan konsep klien</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalInterior" tabindex="-1" aria-labelledby="modalInteriorLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalInteriorLabel">
+                        🎨 Desain Interior
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Menciptakan ruang yang nyaman, indah, dan berkarakter, termasuk:
+                    <ul>
+                        <li>Konsultasi konsep dan kebutuhan ruang</li>
+                        <li>Pemilihan tema, material, warna, dan pencahayaan</li>
+                        <li>Pembuatan furnitur custom (Kitchen set, partisi, dll)</li>
+                        <li>Pelaksanaan interior (keramik, plafon, cat, wallpaper)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal3D" tabindex="-1" aria-labelledby="modal3DLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal3DLabel">
+                        🧊 Desain 3D Visualisasi
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Menampilkan tampilan bangunan secara realistis sebelum dibangun, mencakup:
+                    <ul>
+                        <li>Pembuatan model 3D eksterior dan interior</li>
+                        <li>Visualisasi desain dari perspektif sudut pandang klien</li>
+                        <li>Simulasi warna, pencahayaan, dan tekstur material</li>
+                        <li>
+                            Revisi visual sesuai masukan untuk mencegah kesalahan desain
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalLayout" tabindex="-1" aria-labelledby="modalLayoutLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLayoutLabel">
+                        📐 Pembuatan Layout Bangunan
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Perencanaan tata letak ruang secara efisien dan terstruktur, termasuk:
+                    <ul>
+                        <li>Pembuatan denah lantai (floor plan)</li>
+                        <li>Pemisahan zona ruang privat, semi-privat, dan publik</li>
+                        <li>Pengaturan sirkulasi, ventilasi, dan pencahayaan alami</li>
+                        <li>
+                            Penyesuaian layout dengan ukuran lahan dan kebutuhan pengguna
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalME" tabindex="-1" aria-labelledby="modalMELabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalMELabel">
+                        ⚙️ Instalasi Mekanikal & Elektrikal
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Layanan instalasi sistem pendukung bangunan yang bersifat teknis, meliputi:
+                    <h6>🔌 Instalasi Elektrikal</h6>
+                    <ul>
+                        <li>Instalasi kabel, panel, MCB, dan sistem grounding</li>
+                        <li>Penerangan umum dan dekoratif</li>
+                        <li>Sistem kontrol otomatis (timer, sensor, smart system)</li>
+                    </ul>
+                    <h6>🔥 Instalasi Mekanikal</h6>
+                    <ul>
+                        <li>Sistem plumbing (air bersih dan kotor)</li>
+                        <li>Instalasi pompa air, tandon, dan pemanas air</li>
+                        <li>Sistem HVAC dan Fire fighting system</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalRAB" tabindex="-1" aria-labelledby="modalRABLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalRABLabel">📊 Perhitungan RAB</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Membantu merencanakan dan mengontrol anggaran proyek, meliputi:
+                    <ul>
+                        <li>Rincian biaya material, tenaga kerja, dan alat kerja</li>
+                        <li>
+                            Estimasi biaya berdasarkan volume pekerjaan dan harga pasar terkini
+                        </li>
+                        <li>
+                            RAB fleksibel yang bisa menyesuaikan dengan budget dan prioritas klien
+                        </li>
+                        <li>Dokumen RAB sebagai acuan pembayaran dan kontrol biaya</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalIzin" tabindex="-1" aria-labelledby="modalIzinLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalIzinLabel">
+                        📝 Layanan Perizinan Bangunan
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Mengurus legalitas pembangunan agar proyek berjalan aman dan sah, termasuk:
+                    <ul>
+                        <li>Pengurusan IMB/PBG (Persetujuan Bangunan Gedung)</li>
+                        <li>
+                            Pengajuan SLF (Sertifikat Laik Fungsi) setelah pembangunan selesai
+                        </li>
+                        <li>Izin lingkungan dan izin tetangga bila diperlukan</li>
+                        <li>
+                            Koordinasi dengan dinas/instansi terkait untuk percepatan proses
+                        </li>
+                        <li>Monitoring hingga izin resmi terbit</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top rounded-circle d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <script src="{{url_for('static', filename='js/indexKonstruksi.js')}}"></script>
+</body>
+
+</html>

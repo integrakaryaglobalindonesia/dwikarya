@@ -1,0 +1,408 @@
+{% extends 'base/baseKonstruksi.html' %} {% block content %}
+<section id="home" class="container-fluid p-0">
+    <div class="hero-section position-relative parallax-section">
+        <img class="img-fluid parallax-img position-absolute top-0 start-0" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop" alt="Hero Image: Gedung modern yang sedang dibangun" />
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center overlay-dark">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-9 text-center" data-aos="fade-in">
+                        <h5 class="text-white text-uppercase mb-3">DWIKARYA KONSTRUKSI</h5>
+                        <h1 class="display-3 text-white mb-4">"Mitra Konstruksi Terpercaya untuk Masa Depan Anda"</h1>
+                        <a href="https://wa.me/6285240349899" class="btn btn-primary py-3 px-5">Hubungi Kami Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="features" class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-start">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px; border-radius: 50%">
+                        <i class="fa fa-user-check fa-2x text-primary"></i>
+                    </div>
+                    <div class="ms-4">
+                        <h5 class="mb-0">Tim Berpengalaman</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-start">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px; border-radius: 50%">
+                        <i class="fa fa-check-double fa-2x text-primary"></i>
+                    </div>
+                    <div class="ms-4">
+                        <h5 class="mb-0">Material Berkualitas</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-start">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px; border-radius: 50%">
+                        <i class="fa fa-hand-holding-dollar fa-2x text-primary"></i>
+                    </div>
+                    <div class="ms-4">
+                        <h5 class="mb-0">Harga Kompetitif</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-start">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px; border-radius: 50%">
+                        <i class="fa fa-shield-halved fa-2x text-primary"></i>
+                    </div>
+                    <div class="ms-4">
+                        <h5 class="mb-0">Garansi Pekerjaan</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="container-fluid overflow-hidden my-0 py-0">
+    <div class="container">
+        <div class="row g-5 py-5 align-items-center">
+            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+                <div class="owner-photo-container">
+                    <img src="{{ url_for('static', filename='img/ismail.jpeg') }}" alt="Ismail, Pimpinan Dwikarya Konstruksi" />
+                    <div class="owner-title">
+                        <h5 class="mb-0">Muhammad Ismail Idrus</h5>
+                        <p class="mb-0">Direktur Utama</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400">
+                <div class="section-title text-start">
+                    <h1 class="display-5 mb-4">Mitra Konstruksi Terpercaya Anda</h1>
+                </div>
+                <p class="mb-4 lead">"Suatu kehormatan bagi kami, Dwikarya Konstruksi hadir menjadi bagian dari perjalanan Anda untuk mewujudkan bangunan impian. Dengan pondasi integritas dan komitmen pada kualitas, kami siap membangun masa depan yang lebih kokoh bersama
+                    Anda"
+                </p>
+                <div class="row g-4 mt-4">
+                    <div class="col-md-6">
+                        <h4 class="h5">Visi Kami</h4>
+                        <p>Menjadi Perusahaan Jasa Konstruksi yang Unggul dan Terpercaya di Indonesia dengan Layanan Profesional, Terintegrasi dan Hasil Kerja Terbaik.</p>
+                    </div>
+                    <div class="col-md-6 custom-list">
+                        <h4 class="h5">Misi Kami</h4>
+                        <ul>
+                            <li>Layanan profesional, tepat waktu, & sesuai standar.</li>
+                            <li>Transparansi, efisiensi biaya, & kualitas kerja.</li>
+                            <li>Membangun kepercayaan & kepuasan klien.</li>
+                            <li>Solusi lengkap dari perencanaan hingga legalitas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="container-xxl py-5">
+    <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+            <h1 class="display-5 mb-5">Bidang Layanan Kami</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-custom text-center p-4 d-flex flex-column">
+                    <div class="p-4 flex-grow-1">
+                        <i class="fa fa-building fa-3x text-primary mb-4"></i>
+                        <h4 class="mb-3">Konstruksi Bangunan</h4>
+                        <p>Membangun dari nol, mencakup rumah tinggal, ruko, hingga fasilitas sosial.</p>
+                    </div>
+                    <button class="btn btn-sm btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalKonstruksi">Detail Layanan</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-custom text-center p-4 d-flex flex-column">
+                    <div class="p-4 flex-grow-1">
+                        <i class="fa fa-wrench fa-3x text-primary mb-4"></i>
+                        <h4 class="mb-3">Renovasi Bangunan</h4>
+                        <p>Pembaruan desain, perbaikan struktur, dan perluasan ruangan bangunan lama.</p>
+                    </div>
+                    <button class="btn btn-sm btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalRenovasi">Detail Layanan</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-custom text-center p-4 d-flex flex-column">
+                    <div class="p-4 flex-grow-1">
+                        <i class="fa fa-paint-roller fa-3x text-primary mb-4"></i>
+                        <h4 class="mb-3">Desain Interior</h4>
+                        <p>Menciptakan ruang fungsional dan menarik, dari konsep hingga pembuatan furnitur custom.</p>
+                    </div>
+                    <button class="btn btn-sm btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalInterior">Detail Layanan</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                <div class="card-custom text-center p-4 d-flex flex-column">
+                    <div class="p-4 flex-grow-1">
+                        <i class="fa fa-cube fa-3x text-primary mb-4"></i>
+                        <h4 class="mb-3">Desain 3D Visualisasi</h4>
+                        <p>Menyajikan tampilan bangunan realistis sebelum dibangun untuk mempermudah pengambilan keputusan.</p>
+                    </div>
+                    <button class="btn btn-sm btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modal3D">Detail Layanan</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                <div class="card-custom text-center p-4 d-flex flex-column">
+                    <div class="p-4 flex-grow-1">
+                        <i class="fa fa-ruler-combined fa-3x text-primary mb-4"></i>
+                        <h4 class="mb-3">Pembuatan Layout</h4>
+                        <p>Perencanaan tata letak ruang yang efisien, termasuk denah, sirkulasi, dan zonasi.</p>
+                    </div>
+                    <button class="btn btn-sm btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalLayout">Detail Layanan</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+                <div class="card-custom text-center p-4 d-flex flex-column">
+                    <div class="p-4 flex-grow-1">
+                        <i class="fa fa-cogs fa-3x text-primary mb-4"></i>
+                        <h4 class="mb-3">Instalasi ME</h4>
+                        <p>Pemasangan sistem Mekanikal (plumbing, HVAC) & Elektrikal (panel, smart system) bangunan.</p>
+                    </div>
+                    <button class="btn btn-sm btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalME">Detail Layanan</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="700">
+                <div class="card-custom text-center p-4 d-flex flex-column">
+                    <div class="p-4 flex-grow-1">
+                        <i class="fa fa-file-invoice-dollar fa-3x text-primary mb-4"></i>
+                        <h4 class="mb-3">Perhitungan RAB</h4>
+                        <p>Menyusun Rencana Anggaran Biaya yang transparan dan terperinci untuk kontrol budget proyek.</p>
+                    </div>
+                    <button class="btn btn-sm btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalRAB">Detail Layanan</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="800">
+                <div class="card-custom text-center p-4 d-flex flex-column">
+                    <div class="p-4 flex-grow-1">
+                        <i class="fa fa-gavel fa-3x text-primary mb-4"></i>
+                        <h4 class="mb-3">Layanan Perizinan</h4>
+                        <p>Mengurus legalitas pembangunan seperti IMB/PBG dan SLF agar proyek berjalan aman dan sah.</p>
+                    </div>
+                    <button class="btn btn-sm btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalIzin">Detail Layanan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="keunggulan" class="container-xxl py-5" style="background-color: var(--surface)">
+    <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+            <h1 class="display-5 mb-5">Keunggulan Kami</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 custom-list" data-aos="fade-up">
+                <ul>
+                    <li>Tim ahli dan berpengalaman.</li>
+                    <li>Material berkualitas sesuai standar SNI.</li>
+                    <li>Harga kompetitif dan transparan.</li>
+                    <li>Progres kerja terpantau dan dilaporkan secara rutin.</li>
+                    <li>Garansi pekerjaan hingga 3 bulan (disesuaikan dengan luas bangunan).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="proses" class="container-fluid overflow-hidden my-5 py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <div class="section-title text-start">
+                    <h1 class="display-5 mb-4">Proses Kerja & Pembayaran</h1>
+                </div>
+                <h4 class="h5">Skema Kerja Sama</h4>
+                <ol>
+                    <li>Konsultasi & survei lokasi</li>
+                    <li>Pembuatan desain dan RAB</li>
+                    <li>Tanda tangan kontrak kerja</li>
+                    <li>Proses pelaksanaan & pengawasan</li>
+                    <li>Serah terima hasil dan garansi</li>
+                </ol>
+                <div class="ketentuan-box mt-5">
+                    <h4 class="h5">Ketentuan Pembayaran</h4>
+                    <ol>
+                        <li>Pembayaran via transfer ke rekening resmi Bank Mandiri a.n. PT. Integra Karya Global Indonesia.</li>
+                        <li>Invoice dan tanda terima resmi akan diterbitkan untuk setiap tahap pembayaran.</li>
+                        <li>Pelunasan retensi dibayarkan maks. 30 hari setelah serah terima.</li>
+                        <li>Perubahan volume pekerjaan akan dihitung dalam adendum RAB tambahan.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="position-relative h-100" style="min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="https://images.unsplash.com/photo-1572021335469-31706a17aaef?q=80&w=2070&auto=format&fit=crop" style="border-radius: 1rem; object-fit: cover;" alt="Proses kerja konstruksi" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="container-xxl py-5" style="background-color: var(--surface)">
+    <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+            <h1 class="display-5 mb-5">Portofolio Proyek</h1>
+        </div>
+        <div class="owl-carousel project-carousel" data-aos="fade-up">
+            <div class="p-2">
+                <div class="card-custom">
+                    <div class="position-relative project-img-container">
+                        <img class="img-fluid" src="{{ url_for('static', filename='img/andiTonro.jpg') }}" alt="Pembangunan Rumah Tinggal 2 Lantai" />
+                        <div class="portfolio-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                            <a class="btn btn-square btn-outline-light mx-1" href="{{ url_for('static', filename='img/andiTonro.jpg') }}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-primary fw-medium mb-2">Rumah 1 Lantai (Perum. Andi Tonro, Gowa)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="card-custom">
+                    <div class="position-relative project-img-container">
+                        <img class="img-fluid" src="{{ url_for('static', filename='img/anggrek.jpg') }}" alt="Proyek Rumah Makan" />
+                        <div class="portfolio-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                            <a class="btn btn-square btn-outline-light mx-1" href="{{ url_for('static', filename='img/anggrek.jpg') }}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-primary fw-medium mb-2">Rumah 2 Lantai (Perum. Anggrek, Somba Opu, Gowa)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="card-custom">
+                    <div class="position-relative project-img-container">
+                        <img class="img-fluid" src="{{ url_for('static', filename='img/areopala.jpg') }}" alt="Pembangunan Rumah Tinggal 1 Lantai" />
+                        <div class="portfolio-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                            <a class="btn btn-square btn-outline-light mx-1" href="{{ url_for('static', filename='img/areopala.jpg') }}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-primary fw-medium mb-2">Rumah Tinggal Areopala (Areopala, Makassar)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="card-custom">
+                    <div class="position-relative project-img-container">
+                        <img class="img-fluid" src="{{ url_for('static', filename='img/smpM13.jpg') }}" alt="Proyek Minimarket Pusat Dakwah Aisyiah" />
+                        <div class="portfolio-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                            <a class="btn btn-square btn-outline-light mx-1" href="{{ url_for('static', filename='img/smpM13.jpg') }}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-primary fw-medium mb-2">SMP MUHAMMADIYAH 13 (Jl Kemauan Raya, Makassar)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="card-custom">
+                    <div class="position-relative project-img-container">
+                        <img class="img-fluid" src="{{ url_for('static', filename='img/patalasang1.jpg') }}" alt="Proyek Rumah Tinggal di Bumi Aroepala" />
+                        <div class="portfolio-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                            <a class="btn btn-square btn-outline-light mx-1" href="{{ url_for('static', filename='img/patalasang2.jpg') }}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-primary fw-medium mb-2">Sakinah Village, Pattallasang (Pattallasang Makassar)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="card-custom">
+                    <div class="position-relative project-img-container">
+                        <img class="img-fluid" src="{{ url_for('static', filename='img/penjernihan1.jpg') }}" alt="Proyek Rumah Kost 2 Lantai" />
+                        <div class="portfolio-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                            <a class="btn btn-square btn-outline-light mx-1" href="{{ url_for('static', filename='img/penjernihan2.jpg') }}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-primary fw-medium mb-2">Rumah Penjernihan (Penjernihan, Makassar)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="mitra" class="container-xxl py-5" style="background-color: var(--surface)">
+    <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+            <h1 class="display-5 mb-5">Mitra Kami</h1>
+        </div>
+        <div class="partners-container" data-aos="fade-up">
+            <div class="owl-carousel mitra-carousel">
+
+                <div class="partner-item">
+                    <img src="{{ url_for('static', filename='img/mitra-SMP13.png') }}" alt="Logo SMP Muhammadiyah 13" />
+                    <h6 class="partner-title mb-0">SMP Muhammadiyah 13</h6>
+                </div>
+
+                <div class="partner-item">
+                    <img src="{{ url_for('static', filename='img/mitra-SDLG.png') }}" alt="Logo SDLG" />
+                    <h6 class="partner-title mb-0">SDLG</h6>
+                </div>
+
+                <div class="partner-item">
+                    <img src="{{ url_for('static', filename='img/mitra-aisyia.png') }}" alt="Logo Aisyiyah" />
+                    <h6 class="partner-title mb-0">Aisyiyah</h6>
+                </div>
+
+            </div>
+            <p class="text-center mt-4 text-muted" style="font-size: 0.9rem;">
+                <i class="fa fa-hand-pointer me-2"></i>Geser untuk melihat lebih banyak mitra
+            </p>
+        </div>
+    </div>
+</section>
+<section id="contact" class="container-fluid overflow-hidden my-5 py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <div class="position-relative h-100" style="min-height: 450px">
+                    <iframe class="position-absolute w-100 h-100" style="border: 0; border-radius: 1rem" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.826605624123!2d119.43207749999999!3d-5.131611299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefd457473d0ef%3A0x24fa08545987a166!2sKantor%20Arya%20Land%20Propertindo!5e0!3m2!1sid!2sid!4v1760509995893!5m2!1sid!2sid"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="section-title text-start">
+                    <h1 class="display-5 mb-4">Dapatkan Penawaran Gratis</h1>
+                </div>
+                <p class="mb-4">Hubungi kami untuk konsultasi, survei lokasi, hingga perhitungan Rencana Anggaran Biaya (RAB) tanpa dipungut biaya. Tim kami siap membantu Anda.</p>
+                <form>
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6">
+                            <input type="text" class="form-control form-control-custom" placeholder="Nama Anda" />
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="text" class="form-control form-control-custom" placeholder="Nomor Telepon/WA" />
+                        </div>
+                        <div class="col-12">
+                            <select class="form-select form-control-custom">
+                  <option selected>Pilih Layanan yang Diminati</option>
+                  <option>Konstruksi Bangunan Baru</option>
+                  <option>Renovasi Bangunan</option>
+                  <option>Desain Interior</option>
+                  <option>Lainnya</option>
+                </select>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control form-control-custom" placeholder="Jelaskan kebutuhan singkat Anda di sini..." rows="4"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Kirim Pesan</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
