@@ -257,7 +257,7 @@ h6,
 }
 
 .navbar-brand img {
-    max-height: 40px;
+    max-height: 55px;
     width: auto;
     transition: all 0.3s ease-out;
     filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
@@ -273,7 +273,7 @@ h6,
 }
 
 .navbar-scrolled .navbar-brand img {
-    max-height: 36px;
+    max-height: 60px;
 }
 
 
